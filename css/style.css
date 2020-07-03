@@ -8,7 +8,7 @@
     
 }
 body{
-    background: url(/img/fondo_web2.svg);
+    background: url(img/fondo_web2.svg);
     /* width: 1200px;
     display: flex;
     justify-content: center;
@@ -174,7 +174,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/img/fondo.jpg);
+    background-image: url(img/fondo.jpg);
     background-size: cover;
     background-image:200%;
     animation: movimiento 10s infinite linear alternate;

@@ -174,7 +174,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(img/fondo.jpg);
+    background-image: url(https://pixabay.com/get/57e2d1464d53a814f6d1867dda35367b1c3cd9ec5654754a_1920.jpg);
     background-size: cover;
     background-image:200%;
     animation: movimiento 10s infinite linear alternate;

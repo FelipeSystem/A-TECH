@@ -9,19 +9,36 @@
     
 }
 body{
-    background: url(img/fondo_web2.svg);
+    /* background: url(img/fondo_web2.svg); */
     /* width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; */
+    
+    /* background: url(img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+    /* height: 100vh; */
 }
-
+/* body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,#056277,#4b0e37);
+    opacity: 0.5;
+    z-index: -1;
+} */
 li,a {
     font-family: "Montserrat",sans-serif;
     font-weight: 500;
     
-    font-size: 16px;
+    font-size: 16spx;
     color: rgb(128, 128, 128);
     text-decoration: none;
    
@@ -35,6 +52,7 @@ li,a {
     background: rgb(70, 69, 75);
     /* background: url(/img/fondo_web.svg); */
     background-size: cover;
+    
 }
 
 .logo1{
@@ -62,7 +80,7 @@ li,a {
 
 .nav_links li a{
     transition: all 0.3s ease 0s;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .nav_links li a:hover {
@@ -79,37 +97,51 @@ li,a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    /* height: 1200px; */
     /*width: 1200px; */
     font-family: 'Anton', sans-serif;
-    /* background: #fff; */
+    background: url(img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
 }
+
 
 .inicio .grupo{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     /* margin: 0 auto; */
     /* border:2px solid blue; */
     
 }
 
 .inicio img{
- width: 70%;
+ width: 50%;
  animation: moverIzquierda 1s ease-in;
+ padding: 50px;
+ /* border:2px solid blue; */
 }
 
 .inicio .bloque1{
  display: flex;
  width: 500px;
- /* height: 500px; */
- /* border:2px solid blue; */
+ margin: auto;
  justify-content: center;
  align-items: center;
  flex-direction: column;
  font-family: 'Acme', sans-serif;
+ /* border:2px solid blue; */
+ animation: moverDerecha 1s ease-in;
 }
 
+.inicio .bloque1 h1{
+    color: #000;
+    font-size: 80pt;
+   
+   }
 @keyframes moverIzquierda{
     0%{
        opacity: 0;
@@ -120,11 +152,6 @@ li,a {
         transform: translate(0);
     }
 }
-.inicio .bloque1 h1{
-    
-    font-size: 50pt;
-    animation: moverDerecha 1s ease-in;
-   }
 
 @keyframes moverDerecha{
     0%{
@@ -137,18 +164,21 @@ li,a {
     }
 }
 .inicio .bloque1 p{
-    
-    animation: moverDerecha 1s ease-in;
+    color: #000;
+    font-size: 20pt;
    }
 
-   .btn {
+.btn {
     border-width: 0;
     border-bottom-width: 3px;
     border-radius: 3px;
+    
   }
   .btn.btn-primary {
     background: #ff641b;
-    border-color: #ff641b; border-radius:25px;
+    border-color: #ff641b;
+     border-radius:25px;
+     color:#ff641b;
   }
   .btnc:hover,
   .btn.btn-primary:focus {
@@ -175,14 +205,23 @@ li,a {
 }
 
 .inicio .bloque1 input:hover{
-    border: 2px solid #fff;
+    border: 2px solid #000;
     background: gray;
     color: honeydew;
     border-radius: 15px;
     cursor: pointer;
     }
 
+    
+/* SERVICES */
+.Services{
+    background: rgb(20, 22, 20);
+    /* width: 1000px; */
 
+    /* height: 800px; */
+    align-content: center;
+    
+}
 /* PRESENTACION */
 .presentacion{
     height: 400px;
@@ -341,6 +380,61 @@ li,a {
     padding: 0 10px 5px 0px ;
     text-align: justify;
     font-weight: bold;
+}
+/* SKILSS */
+/* SITEMAIN
+================================================== */
+.site-main {
+    position: relative;
+    margin-bottom: 100px;
+    background-color: #fff;
+    z-index: 1;
+}
+/* site-section */
+.site-section {
+   padding-top: 120px;
+}
+
+.site-section h2,
+.site-section h3 {
+    font-size: 36px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.img-lines {
+    margin: 15px 0 40px;
+}
+
+.site-section p {
+    margin-bottom: 35px;
+}
+
+/* Section: Skills */
+.section-skills {
+    padding-bottom: 120px;
+}
+
+.skill + .skill {
+    margin-top: 50px;
+}
+
+.skill h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.progress {
+    height: 15px;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #dfdfdf;
+    box-shadow: none;
+}
+
+.progress-bar {
+    background-color: #212121;  
 }
 
 /* LINEA DE TIEMPO */
